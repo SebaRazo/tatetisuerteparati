@@ -1,0 +1,48 @@
+:root{
+    --color-utilizado:blueviolet;
+    --lineas: 10px solid var(--color-utilizado);
+}
+
+body{
+    user-select: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-utilizado);
+}
+
+#contenedorGrilla{
+   display: grid;
+   grid-template-columns: repeat(3, 0fr); 
+   justify-content: center;
+}
+
+.cuadrado{
+    color: var(--color-utilizado);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem; 
+    font-weight: bold;  
+}
+
+
+.medio{
+    border-left: var(--lineas);
+    border-right: var(--lineas);
+}
+
+.arriba{
+    border-bottom: var(--lineas);
+    
+
+}
+
+.abajo{
+    border-top: var(--lineas);
+}
