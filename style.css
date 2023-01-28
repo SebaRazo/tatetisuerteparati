@@ -1,16 +1,18 @@
 :root{
     --color-utilizado:blueviolet;
     --lineas: 10px solid var(--color-utilizado);
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
+    background-color: rgb(3, 20, 35);
     user-select: none;
 }
 
 h1{
     text-align: center;
     font-size: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(font-family);
     color: var(--color-utilizado);
 }
 
@@ -45,4 +47,32 @@ h1{
 
 .abajo{
     border-top: var(--lineas);
+}
+
+.ganador{
+    background-color: rgba(141, 48, 203, 0.387);
+}
+
+dialog{
+    text-align: center;
+    min-width: 50vw;
+    background-color:whitesmoke ;
+    padding: 5rem;
+    border: unset;
+    border-radius: 50px;
+}
+
+dialog h2{
+    font-family: var(--font-family);
+    font-size: xx-large;
+}
+
+dialog button{
+    padding: 1rem;
+    font-family: var(--font-family);
+    font-size: larger;
+}
+
+dialog::backdrop{
+    backdrop-filter: blur(3px);
 }
